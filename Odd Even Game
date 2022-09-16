@@ -1,6 +1,7 @@
 import random
 try:
     def OddEve():
+        print("\n    ************ Odd Eve Game ************\n") 
         temp = 1
         score = 0
         while temp == 1 :
@@ -27,7 +28,6 @@ try:
             else : 
                 temp = 1
 
-    print("\t******Odd-Eve Game******\n") 
     OddEve() 
     Restart() 
 
