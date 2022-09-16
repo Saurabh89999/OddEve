@@ -1,0 +1,37 @@
+import random
+try:
+    def OddEve():
+        temp = 1
+        score = 0
+        while temp == 1 :
+            i = int(input("Enter the input: ")) 
+            rand = random.randint(1,7)
+            if rand == i :
+                print("OUT")
+                print(f"Score = {score}")
+                temp = 0
+            else :
+                print("RUNS")
+                score = score + rand
+                print(f"Your input: {i}\nComputer's input: {rand}")
+                print(f"Score: {score}") 
+                temp = 1
+
+
+    def Restart() :
+        temp=0
+        while temp == 0:
+            choice = input("Do you want to play the game again(y/n): ")
+            if choice == 'y'and'Y' :
+                OddEve()
+            else : 
+                temp = 1
+
+    print("\t******Odd-Eve Game******\n") 
+    OddEve() 
+    Restart() 
+
+except ValueError:
+    print("Invalid type is entered ")
+except :
+    print("Something went wrong")
